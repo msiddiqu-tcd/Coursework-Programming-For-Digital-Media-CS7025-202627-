@@ -1,0 +1,83 @@
+body{
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+}  /*this sets the font, background color, text color, and padding for the entire body of the webpage*/
+
+header, .refresh, footer, #status{ /*this sets the text alignment for the header, refresh button, footer, and status message to center*/
+    text-align: center;
+}
+
+header{ /*this sets the font size and bottom margin for the header*/
+    margin-bottom: 25px;
+}
+
+.container{ /*this sets the display to flex, centers the content, allows wrapping, and sets a gap between items in the container*/
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.card, .dublin{ /*this sets the background color, box shadow, box sizing, border radius, width, and padding for the card and dublin elements*/
+    box-sizing: border-box;
+    border-radius: 10px;
+    width: 300px;
+    padding: 10px;
+}
+
+.card{ /*this sets the background color and box shadow for the card element*/
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card h2{ /*this sets the font size, color, and top margin for the h2 element inside the card*/
+    color: #1E90FF;
+    margin-top: 0;
+}
+
+.dublin{ /*this sets the background color, text color, and text alignment for the dublin element*/
+    background-color: #fafcfc;
+    color: #0f0f0f;
+    text-align: center;
+}
+
+.temperature{ /*this sets the font size and weight for the temperature element*/
+    font-size: 32px;
+    font-weight: bold;
+}
+
+button{ /*this sets the background color, text color, border, padding, border radius, cursor, font size, and top margin for the button element*/
+    background-color: #1E90FF;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 15px;
+    margin-top: 15px;
+}
+
+button:hover{ /*this sets the background color for the button element when hovered over*/
+    background-color: #0b6cbf;
+}
+
+#status, footer{ /*this sets the font size and color for the status message and footer elements*/
+    font-size: 14px;
+    color: #666;
+}
+
+#status{ /*this sets the top margin for the status message element*/
+    margin-top: 20px;
+}
+
+footer{ /*this sets the top margin for the footer element*/
+    margin-top: 30px;
+}
+
+@media (max-width: 600px) { /*this sets the width of the card and dublin elements to 100% when the screen width is 600px or less like a mobile device*/
+    .card, .dublin{
+        width: 100%;
+    }
+}

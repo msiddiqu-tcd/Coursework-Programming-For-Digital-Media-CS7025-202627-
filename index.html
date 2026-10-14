@@ -1,0 +1,32 @@
+<!DOCTYPE html> <!--to define the document type and version of HTML being used-->
+<html lang="en"> <!--to specify the language of the document-->
+    <head >
+        <meta charset="UTF-8"> <!--to specify the character encoding for the HTML document-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--to ensure the webpage is responsive and scales correctly on different devices-->
+        <title>Weather App</title>
+
+        <link rel="stylesheet" href="styles.css"> <!--to link our external CSS file for styling the webpage-->
+
+        <script src="script.js" defer></script> <!--to link our external JavaScript file for adding interactivity to the webpage. The defer attribute ensures that the script is executed after the HTML document has been fully parsed.-->
+    </head>
+    <body>
+
+        <header>
+            <h1 >Weather App 🌥️</h1>
+            <p>Current Weather and Time in Dublin, India, Singapore and Japan</p>
+        </header>
+
+        <main class="container" id="weatherContainer"></main> <!--to create a main section of the webpage with a container class and an id of weatherContainer, where the weather information will be displayed-->
+
+        <p id="status">Loading the data to show weather information...</p>
+
+        <div class="refresh"> <!--to create a div element with a class of refresh, which contains a button that allows the user to refresh the weather information displayed on the webpage-->
+            <button onClick="getWeatherfromOpenMeteo()">Refresh Weather</button> <!--to create a button element that, when clicked, calls the getWeatherfromOpenMeteo() function to refresh the weather information displayed on the webpage-->
+        </div>
+
+        <footer><!--to create a footer section of the webpage that contains a paragraph element with information about the source of the weather data-->
+            <p>The weather data is provided by the Open Meteo website for Assignment 1</p>
+            <p> Programming for Digital Media - Assignment 1</p>
+        </footer>
+    </body> 
+</html>
